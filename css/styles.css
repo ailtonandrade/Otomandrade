@@ -47,7 +47,7 @@
   --bs-dark: #212529;
   --bs-black: #000;
   --bs-white: #fff;
-  --bs-primary-rgb: 100, 161, 157;
+  --bs-primary-rgb: #000;
   --bs-secondary-rgb: 116, 100, 161;
   --bs-success-rgb: 103, 194, 156;
   --bs-info-rgb: 28, 171, 196;
@@ -3032,12 +3032,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #16899d;
+  background-color: #;
   border-color: #64a19d;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0e525e;
+  background-color: #6610f2;
+  opacity:0.8;
   border-color: #50817e;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -4627,8 +4628,8 @@ textarea.form-control-lg {
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+ border-color: #000;
+ 
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -11603,18 +11604,22 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height:900px;
+  height:1000px;
 
   /* background: linear-gradient(to bottom, #000 0%, rgba(119, 80, 80, 0.2) 75%, rgba(0, 0, 0, 0.8) 100%); */
 }
 .about-section p {
   margin-bottom: 5rem;
+  
 }
 
 .projects-section {
   padding: 10rem 0;
   width:auto;
   background-image: url("../assets/img/fundoproj.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -11734,6 +11739,41 @@ body {
 }
 
 .aux-button-green{
-  background-color: #325d4b;
+ border-style: solid;
+ border-width: 2px;
+ border-color:#6610f2;
   width:80%;
 }
+.btn-saibamais{
+  border-width: 2px;
+  border-style: solid;
+  border-color: #6610f2;
+  color:honeydew;
+  font-weight:bold;
+  font-size:20pt;
+}
+.aux-maq-res{
+  font-size: 47pt;
+}
+.aux-maq-res-subtitle{
+  font-size: 18pt;
+}
+
+a{
+  color:#6610f2;
+  text-decoration: none;
+}
+.aux-color-projetos{
+ background-color:#141619;
+ transition-duration: 0.2s; 
+color:white;
+height:100%;
+align-items: center;
+justify-content: center;
+
+}
+.aux-color-projetos:hover{
+ color: #101214;
+  background-color:mediumspringgreen;
+
+ }

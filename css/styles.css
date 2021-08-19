@@ -11777,3 +11777,7 @@ justify-content: center;
   background-color:mediumspringgreen;
 
  }
+::selection {
+    background: #141619;
+    color: black;
+}

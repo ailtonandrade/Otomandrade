@@ -11780,3 +11780,6 @@ justify-content: center;
  .btn-projects{
   background-color:#141619;
  }
+::selector{
+ background:mediumspringgreen;
+ color:black;

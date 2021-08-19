@@ -11777,7 +11777,6 @@ justify-content: center;
   background-color:mediumspringgreen;
 
  }
-::selection {
-    background: mediumspringgreen;
-    color: black;
-}
+ .btn-projects{
+  background-color:#141619;
+ }

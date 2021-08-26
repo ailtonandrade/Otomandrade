@@ -54,5 +54,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
                     });
-                
+   CONSOLE.LOG('TESTE2')  ;           
 });
+CONSOLE.LOG('TESTE33');

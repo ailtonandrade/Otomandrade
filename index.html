@@ -26,7 +26,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
+                        teste1
                         <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                        <li class="nav-item">
+                        
+<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contato</a></li>
                     </ul>
@@ -57,12 +65,7 @@
                             <a href="#signup">começar o quanto antes.</a>
                             Gerencio anúncios e produzo peças digitais para engajar seu público de maneira responsável e eficiente.
                         </p>
-                        <button>
-  <fb:login-button 
-  scope="public_profile,email"
-  onlogin="checkLoginState();">
-</fb:login-button>
-                        </button>
+
                                                        <div class="aux-faleagorawhatsapp">
                                 <div class="col-auto">
                                 <a target="_blank" href="https://api.whatsapp.com/send?phone=5513982171904&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20Marketing%20Digital">
@@ -182,6 +185,8 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
      <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
+    </body>
     <script>
         function checkLoginState() {
   FB.getLoginStatus(function(response) {
@@ -212,5 +217,4 @@ FB.getLoginStatus(function(response) {
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-    </body>
 </html>

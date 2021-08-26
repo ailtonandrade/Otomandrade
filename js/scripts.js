@@ -2,6 +2,13 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+    
+    const token = "EAAakJDuiZCGkBAC96fi6IGd9SRchS2wpeZCLhDvf1cznLCPhdI4q56KG2rhd6AJrP7YvmxWqo3tRCkxasuh1g6B4AZCmk4JNdZBlRd1IHWaq4UI8WBa2k48XOlB4fZBGygUhYFeW4sHeWCKfwCSUWkFZCFAN2uL66podEuGZBtZBHOTW4veiIm6RfQv6T79QO4R6EZCyB0DDltcllM6pkg0R1cSgubZBSi4EHSqkZAXMbg9k7bvh8nPFG9kRSKfFg4ILOcZD";
+    const url = "https://graph.instagram.com/me/media?access_token="+token+"&fields=media_url,media_type,caption,permalink";
+                
+    console.log("token"+token);
+    
+    
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -44,17 +51,8 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
                 
-                    $(function(){
-                    const token = "EAAakJDuiZCGkBAC96fi6IGd9SRchS2wpeZCLhDvf1cznLCPhdI4q56KG2rhd6AJrP7YvmxWqo3tRCkxasuh1g6B4AZCmk4JNdZBlRd1IHWaq4UI8WBa2k48XOlB4fZBGygUhYFeW4sHeWCKfwCSUWkFZCFAN2uL66podEuGZBtZBHOTW4veiIm6RfQv6T79QO4R6EZCyB0DDltcllM6pkg0R1cSgubZBSi4EHSqkZAXMbg9k7bvh8nPFG9kRSKfFg4ILOcZD";
-                    const url = "https://graph.instagram.com/me/media?access_token="+token+"&fields=media_url,media_type,caption,permalink";
-
-                    $.get(url).then(function(response){
-                    console.log('retorno',response.data);
-                    })
-
-
-                    });
-    console.log('retorno');
+             
+  
      
 });
 

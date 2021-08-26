@@ -51,9 +51,10 @@ window.addEventListener('DOMContentLoaded', event => {
                     $.get(url).then(function(response){
                     console.log('retorno',response.data);
                     })
-console.log('retorno');
+
 
                     });
+    console.log('retorno');
      
 });
 

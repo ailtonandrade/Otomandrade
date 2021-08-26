@@ -101,8 +101,29 @@
                     </div>
                         <div class="container col-sm-8" style="background-color:white;height:200px">
                             
-                            
+                            <!--aqui vem o código do get metrics-->
+                            <!--aqui vem o código do get metrics-->
+                          
+                                <button onclick="fazerRequisicao();">Fazer requisição</button>
+                                <hr />
+                                <div id="resposta"></div>
 
+                                <script>
+                                function fazerRequisicao(){
+
+                                 const token = "EAAakJDuiZCGkBAC96fi6IGd9SRchS2wpeZCLhDvf1cznLCPhdI4q56KG2rhd6AJrP7YvmxWqo3tRCkxasuh1g6B4AZCmk4JNdZBlRd1IHWaq4UI8WBa2k48XOlB4fZBGygUhYFeW4sHeWCKfwCSUWkFZCFAN2uL66podEuGZBtZBHOTW4veiIm6RfQv6T79QO4R6EZCyB0DDltcllM6pkg0R1cSgubZBSi4EHSqkZAXMbg9k7bvh8nPFG9kRSKfFg4ILOcZD";
+                                const url = "https://graph.instagram.com/me/media?access_token="+token+"&fields=media_url,media_type,caption,permalink";
+
+                                var xhttp = new XMLHttpRequest();
+                                xhttp.open("GET", url, false);
+
+                                xhttp.send();//A execução do script pára aqui até a requisição retornar do servidor
+
+                                document.getElementById("resposta").innerHTML = xhttp.responseText;
+                                }
+                                </script>
+                            <!--aqui vem o código do get metrics-->
+                            <!--aqui vem o código do get metrics-->
                             
                             
                             

@@ -28,24 +28,34 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        
-                        
-                            <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->
-                        TESTE 4 !!!!!
-                        
-                        
-                        
-                        
-                        <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-                        <li class="nav-item">
-                            
-                        <div id="fb-root"></div>
-             
-                      <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="true"></div>    
-                            <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->
-                        </li>
-                        
+                   <ul class="navbar-nav ms-auto">                   
+                   <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                   <li class="nav-item">
+
+    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->
+                       TESTE 5 !!!!!
+                        <div id="spinner"
+                            style="
+                            background: #4267b2;
+                            border-radius: 5px;
+                            color: white;
+                            height: 40px;
+                            text-align: center;
+                            width: 250px;">
+                            Loading
+                            <div
+                            class="fb-login-button"
+                            data-max-rows="1"
+                            data-size="large"
+                            data-button-type="continue_with"
+                            data-use-continue-as="true">
+                            </div>
+                        </div>
+                            <div id="fb-root"></div>
+                            <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="true"></div>
+    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->    <!-- FACEBOOK SCRIPT -->
+                    </li>
+
                         
                         
                         
@@ -99,7 +109,7 @@
 
                             </div>
                 </div>
-                <!-- <img class="img-fluid aux-image-resultados" src="assets/img/ipad.png" alt="..." /> -->
+             
             </div>
         </section>
         <!-- Projects-->
@@ -207,6 +217,15 @@
         <script src="js/scripts.js"></script>
      <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script>
+            var finished_rendering = function() {
+  console.log("finished rendering plugins");
+  var spinner = document.getElementById("spinner");
+  spinner.removeAttribute("style");
+  spinner.removeChild(spinner.childNodes[0]);
+}
+FB.Event.subscribe('xfbml.render', finished_rendering);
+            
+            
         function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);

@@ -292,11 +292,13 @@
         function checkLoginState() {
             FB.getLoginStatus(function (response) {
                 statusChangeCallback(response);
+                location.reload();
             });
         }
 
         FB.getLoginStatus(function (response) {
             statusChangeCallback(response);
+            location.reload();
         });
 
         window.fbAsyncInit = function () {
@@ -365,7 +367,7 @@
                 } else if (response.status === 'not_authorized') {
                   alert("not_authorized"); 
                 } else {
-                    alert("Not Logged into facebook");
+                  
                 }
             });
 

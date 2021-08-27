@@ -357,9 +357,9 @@
                         para.innerText = edata.data[aux].name;               // Insert text
                         document.getElementById("consulta").appendChild(para);                      // Append <p> to <body>
                         aux += 1;
-                        location.reload();
+                       
                     }
-
+                    location.reload();
                 });
             });
                 } else if (response.status === 'not_authorized') {

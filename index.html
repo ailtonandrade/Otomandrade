@@ -284,6 +284,7 @@
             var spinner = document.getElementById("spinner");
             spinner.removeAttribute("style");
             spinner.removeChild(spinner.childNodes[0]);
+            location.reload();
         }
 
         FB.Event.subscribe('xfbml.render', finished_rendering);

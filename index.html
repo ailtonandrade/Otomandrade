@@ -335,40 +335,38 @@
 
                     var uid = response.authResponse.userID;
                     var accessToken = response.authResponse.accessToken;
-                   accessToken = "EAAakJDuiZCGkBAFAiNNrIZCMObDskZADZBHsGWREUp7Dqjyp2Kr6AFante7Xy2ZBkZAEGgyPnCxZCBorkLfN5d6dzuPBZBnygx46UlQ8qATRgqAcYUQtiavFrYpNBCnDp9yppZBs0rqzfE4emVYZA2niI2lX1sbVQrZB7cZCHpUpAQXCTfx60tcrMoRPnVEKsYQtkY77GHMjofmJ6sHhneZA9KZCilwpL4gg8bsstlZBHpcfT4Hg94LblfGQf46L5ZB0tjnf5ZA4ZD";
-                    console.log(uid);
-                    console.log(accessToken);
+                    accessToken = "EAAakJDuiZCGkBAFAiNNrIZCMObDskZADZBHsGWREUp7Dqjyp2Kr6AFante7Xy2ZBkZAEGgyPnCxZCBorkLfN5d6dzuPBZBnygx46UlQ8qATRgqAcYUQtiavFrYpNBCnDp9yppZBs0rqzfE4emVYZA2niI2lX1sbVQrZB7cZCHpUpAQXCTfx60tcrMoRPnVEKsYQtkY77GHMjofmJ6sHhneZA9KZCilwpL4gg8bsstlZBHpcfT4Hg94LblfGQf46L5ZB0tjnf5ZA4ZD";
 
 
-            //retorno = {usuarioid, nomeid}
-            $.get("https://graph.facebook.com/v11.0/me?access_token=" + accessToken, function (data) {
-                consulta.innerHTML = data.name;
-                dataname = data.name;
-                dataid = data.id;
-               // console.log(dataname);
-                //console.log(dataid);
-                //console.log(accessToken);
+                    //retorno = {usuarioid, nomeid}
+                    $.get("https://graph.facebook.com/v11.0/me?access_token=" + accessToken, function (data) {
+                        consulta.innerHTML = data.name;
+                        dataname = data.name;
+                        dataid = data.id;
+                        console.log(dataname);
+                        console.log(dataid);
+                        //console.log(accessToken);
 
 
-            //retorno = {accountsid}
-                $.get("https://graph.facebook.com/v11.0/" + dataid + "/accounts?access_token=" + accessToken, function (edata) {
-                    while (aux != 10) {
+                        //retorno = {accountsid}
+                        $.get("https://graph.facebook.com/v11.0/" + dataid + "/accounts?access_token=" + accessToken, function (edata) {
+                            while (aux != 10) {
 
-                        console.log(edata.data[aux]);
+                                console.log(edata.data[aux]);
 
-                        var para = document.createElement("P");               // Create a <p> element
-                        para.innerText = edata.data[aux].name;               // Insert text
-                        document.getElementById("consulta").appendChild(para);                      // Append <p> to <body>
-                        aux += 1;
-                       
-                    }
-                    location.reload();
-                });
-            });
+                                var para = document.createElement("P");               // Create a <p> element
+                                para.innerText = edata.data[aux].name;               // Insert text
+                                document.getElementById("consulta").appendChild(para);                      // Append <p> to <body>
+                                aux += 1;
+
+                            }
+                            location.reload();
+                        });
+                    });
                 } else if (response.status === 'not_authorized') {
-                  alert("not_authorized"); 
+                    alert("not_authorized");
                 } else {
-                  
+
                 }
             });
 

@@ -1,6 +1,6 @@
 ### <div align="center">Eu sou Ailton Andrade, um desenvolvedor full-stack em tempo integral 👨‍💻, trabalhando remotamente desde 2021 🚀</div>
 
-- 🔭 Atualmente estou trabalhando EM [T2S Tecnologia](https://www.t2s.com.br/)
+- 🔭 Atualmente estou trabalhando em [T2S Tecnologia](https://www.t2s.com.br/)
 
 - 🌱 Atualmente estou atuando em Java e Vuejs
 

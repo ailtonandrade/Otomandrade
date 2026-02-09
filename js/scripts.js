@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
-            navbar.classList.add('bg-white', 'shadow');
-            navbar.classList.remove('bg-transparent');
+            navbar.classList.add('bg-white');
+            navbar.classList.remove('glass');
         } else {
-            navbar.classList.remove('bg-white', 'shadow');
-            navbar.classList.add('bg-transparent');
+            navbar.classList.remove('bg-white');
+            navbar.classList.add('glass');
         }
     });
 

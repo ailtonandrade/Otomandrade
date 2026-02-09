@@ -21,6 +21,40 @@ body {
 
 .navbar-brand {
   font-size: 1.5rem;
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white !important;
+}
+
+.glass {
+  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.bg-white {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar.bg-white .navbar-brand {
+  color: var(--primary-color) !important;
+}
+
+.navbar.bg-white .navbar-nav .nav-link {
+  color: #333 !important;
+}
+
+.navbar.bg-white .navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
 }
 
 .hero {

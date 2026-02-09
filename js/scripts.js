@@ -59,6 +59,19 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.card, .hero .col-lg-6').forEach(el => {
         observer.observe(el);
     });
+
+    // Theme toggle
+    const diaBtn = document.getElementById('dia-btn');
+    const noiteBtn = document.getElementById('noite-btn');
+    const body = document.body;
+
+    diaBtn.addEventListener('click', function() {
+        body.classList.remove('dark-mode');
+    });
+
+    noiteBtn.addEventListener('click', function() {
+        body.classList.add('dark-mode');
+    });
 });
 
 

@@ -8,10 +8,32 @@
   --dark-bg: #343a40;
 }
 
+body.dark-mode {
+  --primary-color: #1e3a8a;
+  --secondary-color: #9ca3af;
+  --warning-color: #f59e0b;
+  --light-bg: #1f2937;
+  --dark-bg: #111827;
+  background-color: var(--dark-bg);
+  color: #e5e7eb;
+}
+
+.theme-btn {
+  cursor: pointer;
+  text-decoration: underline;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.theme-btn:hover {
+  color: var(--warning-color);
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar {
@@ -55,6 +77,29 @@ body {
 
 .navbar.bg-white .navbar-nav .nav-link:hover {
   color: var(--primary-color) !important;
+}
+
+/* Dark Mode Navbar Styles */
+body.dark-mode .glass {
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .navbar.bg-white {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .navbar.bg-white .navbar-brand {
+  color: white !important;
+}
+
+body.dark-mode .navbar.bg-white .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+body.dark-mode .navbar.bg-white .navbar-nav .nav-link:hover {
+  color: white !important;
 }
 
 .hero {
@@ -190,6 +235,47 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Dark Mode Styles */
+body.dark-mode .hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 50%, var(--dark-bg) 100%);
+}
+
+body.dark-mode .bg-light {
+  background-color: var(--dark-bg) !important;
+  color: #e5e7eb;
+}
+
+body.dark-mode .bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+body.dark-mode .text-white {
+  color: #e5e7eb !important;
+}
+
+body.dark-mode .card {
+  background-color: var(--light-bg);
+  color: #333;
+}
+
+body.dark-mode #services .card {
+  color: white;
+}
+
+body.dark-mode .btn-outline-light {
+  border-color: #e5e7eb;
+  color: #e5e7eb;
+}
+
+body.dark-mode .btn-outline-light:hover {
+  background-color: #e5e7eb;
+  color: var(--dark-bg);
+}
+
+body.dark-mode .bg-dark {
+  background-color: #111827 !important;
 }
 
 @media (max-width: 768px) {
